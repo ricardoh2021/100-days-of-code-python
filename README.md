@@ -28,3 +28,55 @@ This repository is organized by day, with each day containing its respective exe
 │       └── exercise2.py\
 │\
 └── ...
+
+Each day's folder contains:
+- `main.py`: The main script for the day's project or primary exercise.
+- `notes.md`: Notes and summaries of key concepts covered.
+- `exercises/`: A folder containing additional exercise scripts.
+
+## Progress
+
+- [x] Day 001 - Introduction to Python
+- [x] Day 002 - Understanding Data Types and How to Manipulate Strings
+- [x] Day 003 - Control Flow and Logical Operators
+- [ ] Day 004 - Randomization and Python Lists
+- [ ] ...
+
+## How to Use This Repository
+
+1. **Clone the Repository**:
+    ```sh
+    git clone https://github.com/your-username/100-days-of-code-python.git
+    cd 100-days-of-code-python
+    ```
+
+2. **Navigate to a Specific Day**:
+    ```sh
+    cd "Day 001 - Introduction to Python"
+    ```
+
+3. **Run the Code**:
+    ```sh
+    python main.py
+    ```
+
+4. **Explore the Exercises**:
+    ```sh
+    cd exercises
+    python exercise1.py
+    ```
+
+## Resources
+
+- [Angela Yu's Udemy Course](https://www.udemy.com/course/100-days-of-code/)
+- [Python Documentation](https://docs.python.org/3/)
+
+## Contributing
+
+Feel free to fork this repository and contribute by submitting pull requests. Your contributions and suggestions are welcome to make this repository a valuable resource for others following the same journey.
+
+## License
+
+This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+Happy coding!
