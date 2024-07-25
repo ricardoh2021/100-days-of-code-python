@@ -9,3 +9,21 @@ Angela Yu's **100 Days of Code: The Complete Python Pro Bootcamp for 2023** is a
 ## Repository Structure
 
 This repository is organized by day, with each day containing its respective exercises, projects, and notes. Here is the general structure:
+
+100-days-of-code-python/
+│
+├── Day 001 - Introduction to Python
+│   ├── main.py
+│   ├── notes.md
+│   └── exercises/
+│       ├── exercise1.py
+│       └── exercise2.py
+│
+├── Day 002 - Understanding Data Types and How to Manipulate Strings
+│   ├── main.py
+│   ├── notes.md
+│   └── exercises/
+│       ├── exercise1.py
+│       └── exercise2.py
+│
+└── …
