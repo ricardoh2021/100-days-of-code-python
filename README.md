@@ -39,7 +39,7 @@ Each day's folder contains:
 - [x] Day 001 - Introduction to Python
 - [x] Day 002 - Understanding Data Types and How to Manipulate Strings
 - [x] Day 003 - Control Flow and Logical Operators
-- [ ] Day 004 - Randomization and Python Lists
+- [x] Day 004 - Randomization and Python Lists
 - [ ] ...
 
 ## How to Use This Repository
