@@ -52,4 +52,16 @@ while len(randomLetters) > 0 or len(randomNumbers) or len(randomSymbols):
         passwordNumber = numbers[indexNumber]
         password += passwordNumber
 
-print(password)
+print(f"Your password is {password}")
+## Chat GPT refactored version below .
+
+# random_letters = [random.choice(letters) for _ in range(nr_letters)]
+# random_symbols = [random.choice(symbols) for _ in range(nr_symbols)]
+# random_numbers = [random.choice(numbers) for _ in range(nr_numbers)]
+
+# password_characters = random_letters + random_symbols + random_numbers
+# random.shuffle(password_characters)
+
+# password = ''.join(password_characters)
+
+# print(f"Your generated password is: {password}")
