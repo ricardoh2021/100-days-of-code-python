@@ -40,7 +40,7 @@ Each day's folder contains:
 - [x] Day 002 - Understanding Data Types and How to Manipulate Strings
 - [x] Day 003 - Control Flow and Logical Operators
 - [x] Day 004 - Randomization and Python Lists
-- [ ] ...
+- [ ] Day 005 - Python For loops
 
 ## How to Use This Repository
 
