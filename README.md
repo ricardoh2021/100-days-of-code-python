@@ -41,7 +41,8 @@ Each day's folder contains:
 - [x] Day 003 - Control Flow and Logical Operators
 - [x] Day 004 - Randomization and Python Lists
 - [x] Day 005 - Python For loops
-- [x] Day 006 - Python Functions & Karel 
+- [x] Day 006 - Python Functions & Karel
+- [x] Day 007 - Python Hangman Game
 
 ## How to Use This Repository
 
