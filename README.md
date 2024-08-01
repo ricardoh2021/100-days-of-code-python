@@ -44,6 +44,7 @@ Each day's folder contains:
 - [x] Day 006 - Python Functions & Karel
 - [x] Day 007 - Python Hangman Game
 - [x] Day 008 - Function Parameters & Caesar Cipher
+- [x] Day 009 - Dictionaries & Nested Lists
 
 ## How to Use This Repository
 
