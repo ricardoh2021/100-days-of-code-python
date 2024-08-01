@@ -10,7 +10,6 @@ Angela Yu's **100 Days of Code: The Complete Python Pro Bootcamp for 2023** is a
 
 This repository is organized by day, with each day containing its respective exercises, projects, and notes. Here is the general structure:
 
-
 100-days-of-code-python/\
 │\
 ├── Day 001 - Introduction to Python\
@@ -30,6 +29,7 @@ This repository is organized by day, with each day containing its respective exe
 └── ...
 
 Each day's folder contains:
+
 - `main.py`: The main script for the day's project or primary exercise.
 - `notes.md`: Notes and summaries of key concepts covered.
 - `exercises/`: A folder containing additional exercise scripts.
@@ -43,30 +43,34 @@ Each day's folder contains:
 - [x] Day 005 - Python For loops
 - [x] Day 006 - Python Functions & Karel
 - [x] Day 007 - Python Hangman Game
+- [x] Day 008 - Function Parameters & Caesar Cipher
 
 ## How to Use This Repository
 
 1. **Clone the Repository**:
-    ```sh
-    git clone https://github.com/your-username/100-days-of-code-python.git
-    cd 100-days-of-code-python
-    ```
+
+   ```sh
+   git clone https://github.com/your-username/100-days-of-code-python.git
+   cd 100-days-of-code-python
+   ```
 
 2. **Navigate to a Specific Day**:
-    ```sh
-    cd "Day 001 - Introduction to Python"
-    ```
+
+   ```sh
+   cd "Day 001 - Introduction to Python"
+   ```
 
 3. **Run the Code**:
-    ```sh
-    python main.py
-    ```
+
+   ```sh
+   python main.py
+   ```
 
 4. **Explore the Exercises**:
-    ```sh
-    cd exercises
-    python exercise1.py
-    ```
+   ```sh
+   cd exercises
+   python exercise1.py
+   ```
 
 ## Resources
 
