@@ -46,6 +46,7 @@ Each day's folder contains:
 - [x] Day 008 - Function Parameters & Caesar Cipher
 - [x] Day 009 - Dictionaries & Nested Lists
 - [x] Day 010 - Functions with Outputs
+- [x] Day 011 - Blackstone Project
 
 ## How to Use This Repository
 
