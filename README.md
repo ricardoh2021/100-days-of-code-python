@@ -47,6 +47,7 @@ Each day's folder contains:
 - [x] Day 009 - Dictionaries & Nested Lists
 - [x] Day 010 - Functions with Outputs
 - [x] Day 011 - Blackstone Project
+- [x] Day 012 - Python Scope and Guessing Game (08/06/2024)
 
 ## How to Use This Repository
 
