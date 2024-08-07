@@ -48,6 +48,7 @@ Each day's folder contains:
 - [x] Day 010 - Functions with Outputs
 - [x] Day 011 - Blackstone Project
 - [x] Day 012 - Python Scope and Guessing Game (08/06/2024)
+- [x] Day 013 - Debugging (08/06/2024) - an easier day due to my experience with debugging.
 
 ## How to Use This Repository
 
