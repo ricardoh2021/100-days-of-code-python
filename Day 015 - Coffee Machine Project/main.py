@@ -34,12 +34,23 @@ cash_register_money = 0.0
 
 
 def get_report():
+    """Prints a report of the current resources and cash register money."""
     print(f"Water: {resources.get('water')}ml")
     print(f"Milk: {resources.get('milk')}ml")
     print(f"Coffee: {resources.get('coffee')}g")
     print(f"Money: ${cash_register_money}")
 
+
 def get_coffee_resources(coffeeType):
+    """
+    Retrieves the necessary ingredients for the selected coffee type.
+
+    Args:
+        coffeeType (str): The type of coffee to be made.
+
+    Returns:
+        tuple: A tuple containing the required water, milk, and coffee amounts.
+    """
     coffee = MENU.get(coffeeType)
     ingredient_list = coffee.get('ingredients')
     water = ingredient_list.get('water')
@@ -47,7 +58,18 @@ def get_coffee_resources(coffeeType):
     coffee_amount = ingredient_list.get('coffee')
 
     return water, milk, coffee_amount
+
+
 def check_resources(coffeeType):
+    """
+    Checks if there are sufficient resources to make the selected coffee type.
+
+    Args:
+        coffeeType (str): The type of coffee to be made.
+
+    Returns:
+        bool: True if resources are sufficient, False otherwise.
+    """
     water, milk, coffee_amount = get_coffee_resources(coffeeType)
 
     if water > resources.get('water'):
@@ -60,7 +82,17 @@ def check_resources(coffeeType):
         return True
     return False
 
+
 def process_coins(coffeeType):
+    """
+    Processes coin input from the user and checks if the amount is sufficient to purchase the selected coffee.
+
+    Args:
+        coffeeType (str): The type of coffee to be purchased.
+
+    Returns:
+        bool: True if the amount is sufficient, False otherwise.
+    """
     global cash_register_money
     while True:
         try:
@@ -109,14 +141,20 @@ def process_coins(coffeeType):
     if total < coffeePrice:
         print("Sorry that's not enough money. Money Refunded.")
     elif total > coffeePrice:
-        #give change.
         change = round(total - coffeePrice, 2)
         print(f"Here is ${change} in change.")
         cash_register_money += coffeePrice
         return True
     return False
 
+
 def create_coffee(coffeeType):
+    """
+    Deducts the necessary resources to make the selected coffee and prints a message.
+
+    Args:
+        coffeeType (str): The type of coffee to be made.
+    """
     water, milk, coffee_amount = get_coffee_resources(coffeeType)
     resources["water"] -= water
     resources["milk"] -= milk
@@ -124,27 +162,26 @@ def create_coffee(coffeeType):
 
     print(f"Here is your {coffeeType}. Enjoy!☕️")
 
+
 def coffee_machine():
+    """Main function to run the coffee machine, handling user input and operations."""
     while True:
-        ##Ask the user what they want to drink
         coffeeType = input("What would you like? (espresso/latte/cappuccino): ").strip().lower()
         if coffeeType == "off":
-            # Turn off machine.
             print("Secret Key accepted. Turning off coffee machine...")
             exit()
         while coffeeType not in ['espresso', 'latte', 'cappuccino', 'report']:
             coffeeType = input(
-                "Invalid Input. Please try again.\nWhat would you like? (expresso/latte/cappuccino): ").strip().lower()
+                "Invalid Input. Please try again.\nWhat would you like? (espresso/latte/cappuccino): ").strip().lower()
 
         if coffeeType == "report":
             get_report()
         else:
             can_create_coffee = check_resources(coffeeType)
             if can_create_coffee:
-                ##Ask for coins
                 is_valid_amount = process_coins(coffeeType)
                 if is_valid_amount:
-                    # Deplete the resources.
                     create_coffee(coffeeType)
+
 
 coffee_machine()
