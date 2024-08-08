@@ -1,6 +1,6 @@
 # 100 Days of Code: Python Bootcamp
 
-Welcome to the **100 Days of Code: Python Bootcamp** repository! This repository is dedicated to documenting my journey through Angela Yu's comprehensive Udemy course on learning Python. Follow along as I complete various exercises, projects, and challenges designed to build a solid foundation in Python programming.
+Welcome to the **100 Days of Code: Python Bootcamp** repository! This repository is dedicated to documenting my journey through Angela Yu's comprehensive Udemy course on learning Python. I have a sufficient knowledge of Python thanks to a Data Science course I took in my senior year of college, but I would like improve my Python skills to possibly work with Data in the future. Follow along as I complete various exercises, projects, and challenges designed to build a solid foundation in Python programming.
 
 ## Course Overview
 
