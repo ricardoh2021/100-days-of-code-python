@@ -1,6 +1,6 @@
 ## Day 18: 100 Days of Code - Python
 
-**Date:** [Insert Date]
+**Date:** 08/13/2024
 
 ### Summary
 
