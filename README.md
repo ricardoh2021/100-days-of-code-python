@@ -51,6 +51,8 @@ Each day's folder contains:
 - [x] Day 013 - Debugging (08/06/2024) - an easier day due to my experience with debugging.
 - [x] Day 014 - Higher Lower Game (08/07/2024)
 - [x] Day 015 - Coffee Machine (08/08/2024)
+- [x] Day 016 - Object Oriented Programming (08/09/2024)
+- [x] Day 017 - Quiz Project (08/13/2024) (Made up for not doing on Monday)
 
 ## How to Use This Repository
 
