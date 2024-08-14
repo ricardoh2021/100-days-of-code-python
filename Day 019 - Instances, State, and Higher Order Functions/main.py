@@ -1,43 +1,72 @@
 from turtle import Turtle, Screen
 import random
 
-screen = Screen()
+def setup_screen():
+    screen = Screen()
+    screen.setup(width=500, height=400)
+    return screen
 
-is_race_on = False
-screen.setup(width=500, height=400)
-user_bet = screen.textinput(title="Make your bet", prompt="Which turtle will win the race? Enter a color: ")
-colors = ['red', 'orange', 'yellow', 'blue', 'purple', 'green']
+def get_user_bet(screen, colors):
+    user_bet = None
+    while not user_bet or user_bet.lower() not in colors:
+        user_bet = screen.textinput(title="Make your bet", prompt=f"Which turtle will win the race? Enter a color ({', '.join(colors)}): ")
+        if user_bet is None:  # Handle cancel/close input dialog
+            return None
+    return user_bet.lower()
 
-y_cord = -100
-turtles = []  # Create an empty list to store the turtles
+def create_turtles(colors):
+    turtles = []
+    y_cord = -100
+    for turtle_color in colors:
+        t = Turtle(shape="turtle")
+        t.color(turtle_color)
+        t.penup()
+        t.goto(-240, y_cord)
+        y_cord += 50
+        turtles.append(t)
+    return turtles
 
-for turtle_color in colors:
-    t = Turtle(shape="turtle")
-    t.color(turtle_color)
-    t.penup()
-    t.goto(-240, y_cord)
-    y_cord += 50
-    turtles.append(t)  # Add each turtle to the list
-
-# Now you can access the turtles individually using the turtles list
-# For example, to access the first turtle:
-first_turtle = turtles[0]
-
-
-if user_bet:
+def race_turtles(turtles):
     is_race_on = True
+    while is_race_on:
+        for turtle in turtles:
+            if turtle.xcor() > 230:
+                is_race_on = False
+                return turtle.pencolor()
+            random_distance = random.randint(0, 10)
+            turtle.forward(random_distance)
 
-while is_race_on:
-    ##Race will be on until a turtle gets to position 250
-    for turtle in turtles:
-        if turtle.xcor() > 230:
-            is_race_on = False
-            winning_color = turtle.pencolor()
-            if winning_color == user_bet:
-                print(f"You've won! The {winning_color} turtle is the winner!")
-            else:
-                print(f"You've lost! The {winning_color} turtle is the winner!")
+def main():
+    colors = ['red', 'orange', 'yellow', 'blue', 'purple', 'green']
+    screen = setup_screen()
 
-        random_distance = random.randint(0, 10)
-        turtle.forward(random_distance)
-screen.exitonclick()
+    while True:
+        user_bet = get_user_bet(screen, colors)
+
+        if not user_bet:
+            print("No bet was placed. Exiting the game.")
+            break
+
+        turtles = create_turtles(colors)
+        winning_color = race_turtles(turtles)
+
+        if winning_color == user_bet:
+            print(f"You've won! The {winning_color} turtle is the winner!")
+        else:
+            print(f"You've lost! The {winning_color} turtle is the winner!")
+
+        restart = screen.textinput(title="Play Again?", prompt="Do you want to play again? Type 'yes' to restart or 'no' to exit.")
+        if not restart or restart.lower() != 'yes':
+            print("Thanks for playing! Exiting the game.")
+            break
+
+        # Clear the turtles for the next race
+        screen.clear()
+        for turtle in turtles:
+            turtle.reset()
+
+
+    screen.bye()  # Close the screen window
+
+if __name__ == "__main__":
+    main()
