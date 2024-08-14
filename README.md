@@ -54,6 +54,7 @@ Each day's folder contains:
 - [x] Day 016 - Object Oriented Programming (08/09/2024)
 - [x] Day 017 - Quiz Project (08/13/2024) (Made up for not doing on Monday)
 - [x] Day 018 - Turtle & GUI Project (08/13/2024)
+- [x] Day 019 - Turtle Race Project (08/14/2024)
 
 ## How to Use This Repository
 
