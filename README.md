@@ -57,6 +57,7 @@ Each day's folder contains:
 - [x] Day 019 - Turtle Race Project (08/14/2024)
 - [x] Day 020 - Snake Game Part 1 (08/15/2024)
 - [x] Day 021 - Snake Game Complete (08/16/2024)
+- [x] Day 022 - Pong Game Complete (08/19/2024)
 
 ## How to Use This Repository
 
