@@ -47,3 +47,10 @@ class Snake(Turtle):
         s.penup()
         s.goto(position)
         self.snake_links.append(s)
+
+    def reset(self):
+        for snake in self.snake_links:
+            snake.goto(1000, 1000)
+        self.snake_links.clear()
+        self.create_snake()
+        self.head = self.snake_links[0]
