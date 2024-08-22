@@ -1,6 +1,6 @@
 # 100 Days of Code: Python Bootcamp
 
-Welcome to the **100 Days of Code: Python Bootcamp** repository! This repository is dedicated to documenting my journey through Angela Yu's comprehensive Udemy course on learning Python. I have a sufficient knowledge of Python thanks to a Data Science course I took in my senior year of college, but I would like improve my Python skills to possibly work with Data in the future. Follow along as I complete various exercises, projects, and challenges designed to build a solid foundation in Python programming.
+Welcome to the **100 Days of Code: Python Bootcamp** repository! This repository is dedicated to documenting my journey through Angela Yu's comprehensive Udemy course on learning Python. I have a sufficient knowledge of Python thanks to a Data Science course I took in my senior year of college, but I would like improve my Python skills to possibly work with Data in the future. Follow along as I complete various exercises, projects, and challenges designed to build a solid foundation in Python programming. I try my best to use the video tutorials for projects as least as possible.
 
 ## Course Overview
 
@@ -58,6 +58,8 @@ Each day's folder contains:
 - [x] Day 020 - Snake Game Part 1 (08/15/2024)
 - [x] Day 021 - Snake Game Complete (08/16/2024)
 - [x] Day 022 - Pong Game Complete (08/19/2024)
+- [x] Day 023 - Turtle Crossing Game Complete (08/20/2024)
+- [x] Day 024 - Mail Merger Game Complete (08/22/2024)
 
 ## How to Use This Repository
 
