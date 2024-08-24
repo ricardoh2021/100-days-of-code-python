@@ -60,6 +60,7 @@ Each day's folder contains:
 - [x] Day 022 - Pong Game Complete (08/19/2024)
 - [x] Day 023 - Turtle Crossing Game Complete (08/20/2024)
 - [x] Day 024 - Mail Merger Game Complete (08/22/2024)
+- [x] Day 025 - States Game and Working with CSV (08/24/2024)
 
 ## How to Use This Repository
 
