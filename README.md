@@ -63,6 +63,7 @@ Each day's folder contains:
 - [x] Day 025 - States Game and Working with CSV (08/24/2024)
 - [x] Day 026 - List and Dictionary Comprehension (08/27/2024)
 - [x] Day 027 - Tkinter (08/27/2024)
+- [x] Day 028 - Pomodoro Tkinter (08/28/2024)
 
 ## How to Use This Repository
 
