@@ -64,6 +64,8 @@ Each day's folder contains:
 - [x] Day 026 - List and Dictionary Comprehension (08/27/2024)
 - [x] Day 027 - Tkinter (08/27/2024)
 - [x] Day 028 - Pomodoro Tkinter (08/28/2024)
+- [x] Day 029 - Password Manager Tkinter (08/29/2024)
+
 
 ## How to Use This Repository
 
