@@ -85,7 +85,7 @@ Each day's folder contains:
 3. **Run the Code**:
 
    ```sh
-   python main.py
+   python playground.py
    ```
 
 4. **Explore the Exercises**:
