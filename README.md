@@ -67,6 +67,9 @@ Each day's folder contains:
 - [x] Day 029 - Password Manager Tkinter (08/29/2024)
 - [x] Day 030 - Password Manager w/ Try/Catch Exception Handling (08/29/2024)
 - [x] Day 031 - Flashcard Captsone Project (09/03/2024)
+- [x] Day 032 - Birthday Wisher Project (09/04/2024)
+- [x] Day 033 - API Project (09/05/2024)
+
 
 
 ## How to Use This Repository
