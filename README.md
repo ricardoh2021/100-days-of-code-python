@@ -69,6 +69,7 @@ Each day's folder contains:
 - [x] Day 031 - Flashcard Captsone Project (09/03/2024)
 - [x] Day 032 - Birthday Wisher Project (09/04/2024)
 - [x] Day 033 - API Project (09/05/2024)
+- [x] Day 034 - API Project (09/09/2024)
 
 
 
