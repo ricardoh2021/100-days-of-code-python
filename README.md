@@ -70,6 +70,9 @@ Each day's folder contains:
 - [x] Day 032 - Birthday Wisher Project (09/04/2024)
 - [x] Day 033 - API Project (09/05/2024)
 - [x] Day 034 - API Project (09/09/2024)
+- [x] Day 035 - API Project with Rain Alert (09/10/2024)
+- [x] Day 036 - Stock Trading News Alert (09/1/2024)
+
 
 
 
