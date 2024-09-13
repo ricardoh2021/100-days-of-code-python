@@ -71,8 +71,9 @@ Each day's folder contains:
 - [x] Day 033 - API Project (09/05/2024)
 - [x] Day 034 - API Project (09/09/2024)
 - [x] Day 035 - API Project with Rain Alert (09/10/2024)
-- [x] Day 036 - Stock Trading News Alert (09/1/2024)
-- [x] Day 037 - Habit Tracking API (09/1/2024)
+- [x] Day 036 - Stock Trading News Alert (09/11/2024)
+- [x] Day 037 - Habit Tracking API (09/12/2024)
+- [x] Day 038 - Workout Tracking API (09/13/2024)
 
 
 
