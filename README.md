@@ -74,7 +74,7 @@ Each day's folder contains:
 - [x] Day 036 - Stock Trading News Alert (09/11/2024)
 - [x] Day 037 - Habit Tracking API (09/12/2024)
 - [x] Day 038 - Workout Tracking API (09/13/2024)
-
+- [x] Day 039 - Flight Tracking API (09/16/2024) - Sick day today. Took a lot longer than expected.
 
 
 
