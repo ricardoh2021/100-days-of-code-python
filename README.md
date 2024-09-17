@@ -75,6 +75,7 @@ Each day's folder contains:
 - [x] Day 037 - Habit Tracking API (09/12/2024)
 - [x] Day 038 - Workout Tracking API (09/13/2024)
 - [x] Day 039 - Flight Tracking API (09/16/2024) - Sick day today. Took a lot longer than expected.
+- [x] Day 040 - Flight Club (09/17/2024) - 
 
 
 
