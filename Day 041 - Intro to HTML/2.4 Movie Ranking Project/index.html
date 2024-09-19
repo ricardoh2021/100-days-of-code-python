@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ricardo's Favorite Movies</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to external stylesheet -->
+  </head>
+  <body>
+    <!-- Main Content Section -->
+    <main>
+      <h1>The best movies according to Ricardo Hernandez</h1>
+      <h2>My top 3 movies of all time!</h2>
+      <hr />
+      <div id="movies-list">
+        <!-- Movies will be dynamically loaded here -->
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Ricardo Hernandez. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to load movies dynamically -->
+    <script>
+      // Fetch the movies from a JSON file
+      fetch("movies.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const moviesList = document.getElementById("movies-list");
+          data.forEach((movie) => {
+            // Create movie elements dynamically
+            const movieDiv = document.createElement("div");
+            const movieTitle = document.createElement("h3");
+            const movieDescription = document.createElement("p");
+
+            movieTitle.textContent = movie.title;
+            movieDescription.textContent = movie.description;
+
+            movieDiv.appendChild(movieTitle);
+            movieDiv.appendChild(movieDescription);
+            moviesList.appendChild(movieDiv);
+          });
+        })
+        .catch((error) => console.error("Error loading movies:", error));
+    </script>
+  </body>
+</html>
