@@ -77,6 +77,7 @@ Each day's folder contains:
 - [x] Day 039 - Flight Tracking API (09/16/2024) - Sick day today. Took a lot longer than expected.
 - [x] Day 040 - Flight Club (09/17/2024)
 - [x] Day 041 - HTML Introduction (09/19/2024) - Easier Day. Taking a week off to visit family in Mexico!
+- [x] Day 042 - HTML Introduction (09/30/2024) - First day back from Mexico
 
 ## How to Use This Repository
 
