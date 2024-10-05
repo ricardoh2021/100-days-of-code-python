@@ -79,7 +79,10 @@ Each day's folder contains:
 - [x] Day 041 - HTML Introduction (09/19/2024) - Easier Day. Taking a week off to visit family in Mexico!
 - [x] Day 042 - HTML Intermediate (09/30/2024) - First day back from Mexico
 - [x] Day 043 - CSS Introduction (10/01/2024) - Happy First day of October
-- [x] Day 044 - CSS Intermediate (10/01/2024)
+- [x] Day 044 - CSS Intermediate (10/02/2024)
+- [x] Day 045 - Web Scraping (10/03/2024)
+- [x] Day 046 - Spotify Playlist via Billboard Top 100 website (10/04/2024) - Taking small break to study for an interview
+
 
 ## How to Use This Repository
 
