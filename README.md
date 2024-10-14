@@ -82,6 +82,7 @@ Each day's folder contains:
 - [x] Day 044 - CSS Intermediate (10/02/2024)
 - [x] Day 045 - Web Scraping (10/03/2024)
 - [x] Day 046 - Spotify Playlist via Billboard Top 100 website (10/04/2024) - Taking small break to study for an interview
+- [x] Day 047 - Amazon Scraping (10/14/2024)
 
 
 ## How to Use This Repository
