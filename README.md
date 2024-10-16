@@ -84,6 +84,8 @@ Each day's folder contains:
 - [x] Day 046 - Spotify Playlist via Billboard Top 100 website (10/04/2024) - Taking small break to study for an interview
 - [x] Day 047 - Amazon Scraping (10/14/2024)
 - [x] Day 048 - Selenium Scraping (10/15/2024)
+- [x] Day 049 - LinkedIn Easy Apply (10/16/2024)
+- [ ] Day 050 - Tinder Swiping Selenium (Skipping because do not want to download Tinder) (10/16/2024)
 
 
 
