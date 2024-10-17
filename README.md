@@ -88,7 +88,7 @@ Each day's folder contains:
 - [ ] Day 050 - Tinder Swiping Selenium (Skipping because do not want to download Tinder) (10/16/2024)
 - [ ] Day 051 - Twitter Selenium (Skipping because do not want to add more bots to X) (10/16/2024)
 - [ ] Day 052 - Instagram Bot Selenium (Skipping because do not want to add more bots to Insta) (10/16/2024)
-- [ ] Day 053 - Tinder Swiping Selenium (Skipping because do not want to download Tinder) (10/16/2024)
+- [X] Day 053 - Tinder Swiping Selenium (Skipping because do not want to download Tinder) (10/16/2024)
 
 
 ## How to Use This Repository
