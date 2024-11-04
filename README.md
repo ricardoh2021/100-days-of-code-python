@@ -90,6 +90,8 @@ Each day's folder contains:
 - [ ] Day 052 - Instagram Bot Selenium (Skipping because do not want to add more bots to Insta) (10/16/2024)
 - [X] Day 053 - Zillow Clone  Selenium 10/17/2024
 - [X] Day 054 - Flask Introduction 10/22/2024
+- [X] Day 055 - Flask Guess Number Website 11/4/2024
+
 
 
 ## How to Use This Repository
