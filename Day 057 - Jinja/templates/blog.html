@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Post</title>
+</head>
+<body>
+    {% for blog_post in posts %}
+        {% if blog_post["id"] == 2: %}
+            <h1>{{blog_post.get("title", "N/A")}}</h1>
+            <h2>{{blog_post.get("subtitle", "N/A")}}</h2>
+            <p>{{blog_post.get("body", "N/A")}}</p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
