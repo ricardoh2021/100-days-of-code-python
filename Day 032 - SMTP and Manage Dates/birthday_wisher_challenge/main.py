@@ -3,9 +3,14 @@ import random
 import smtplib
 import datetime as dt
 import pandas as pd
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 
 MY_EMAIL = "throwawaylolbob68@gmail.com"
-PASSWORD = "wsclpewlnwdafeyf"
+PASSWORD = os.getenv("SMTP_EMAIL_PASSWORD")
 
 
 letters = ["letter_1.txt", "letter_2.txt", "letter_3.txt"]

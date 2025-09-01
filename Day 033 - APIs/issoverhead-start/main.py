@@ -2,12 +2,15 @@ import requests
 from datetime import datetime
 import smtplib
 import time
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 # Constants
 MY_LAT = 39.849532  # Your latitude
 MY_LONG = -77.174635  # Your longitude
 MY_EMAIL = "throwawaylolbob68@gmail.com"
-PASSWORD = "wsclpewlnwdafeyf"
+PASSWORD = os.getenv("SMTP_EMAIL_PASSWORD")
 CHECK_INTERVAL = 60  # Time between checks in seconds
 
 # API URLs
