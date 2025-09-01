@@ -91,6 +91,11 @@ Each day's folder contains:
 - [X] Day 053 - Zillow Clone  Selenium 10/17/2024
 - [X] Day 054 - Flask Introduction 10/22/2024
 - [X] Day 055 - Flask Guess Number Website 11/4/2024
+- [X] Day 056 - Rendering htmml pages with Flask
+- [X] Day 057 - Learning Jinja
+- [X] Day 058 - Upgrade Blog with Jinja
+- [X] Day 061 - Working with FLASK WTF and Flask Bootstrap 8/28/2025
+
 
 
 
