@@ -95,6 +95,8 @@ Each day's folder contains:
 - [X] Day 057 - Learning Jinja
 - [X] Day 058 - Upgrade Blog with Jinja
 - [X] Day 061 - Working with FLASK WTF and Flask Bootstrap 8/28/2025
+- [X] Day 062 - 9/2/2025 Coffee and Wifi Project
+
 
 
 
