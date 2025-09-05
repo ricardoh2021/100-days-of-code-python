@@ -13,9 +13,35 @@
           <!-- This is where you will write the code to render a Bootstrap 
           Table that contains all the information from the 
           cafe-data.csv file. -->
+            <thead>
+                <tr>
+                    {% for cafe in cafes %}
+                        {% if loop.first %}
+                            {% for item in cafe %}
+                                <th scope="col">{{item}}</th>
+                            {% endfor %}
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for cafe in cafes %}
+                    {% if not loop.first %}
+                        <tr>
+                            {% for item in cafe %}
+                                {% if item.startswith("http") %}
+                                    <td><a href="{{ item }}">Maps link</a></td>
+                                {% else %}
+                                    <td>{{ item }}</td>
+                                {% endif %}
+                            {% endfor %}
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </tbody>
   	  </table>
 
-      <p><a href="#">Return to index page</a></p>
+      <p><a href="/">Return to index page</a></p>
 
     </div>
   </div>

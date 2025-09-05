@@ -1,9 +1,12 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
 from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
-from wtforms.validators import DataRequired
+from wtforms.fields.choices import SelectField
+from wtforms.fields.datetime import TimeField
+from wtforms.validators import DataRequired, URL
 import csv
+import pandas as pd
 
 '''
 Red underlines? Install the required packages first: 
@@ -25,7 +28,42 @@ Bootstrap5(app)
 
 class CafeForm(FlaskForm):
     cafe = StringField('Cafe name', validators=[DataRequired()])
+    location_url = StringField('Location URL', validators=[DataRequired(), URL()])
+    open_time = TimeField('Open Time', validators=[DataRequired()])
+    close_time = TimeField('Closing Time', validators=[DataRequired()])
+    coffee_rating = SelectField('Coffee Rating', validators=[DataRequired()], choices=[
+            ("☕️", "☕️"),         # 1 coffee
+            ("☕️☕️", "☕️☕️"),   # 2 coffees
+            ("☕️☕️☕️", "☕️☕️☕️"),
+            ("☕️☕️☕️☕️", "☕️☕️☕️☕️"),
+            ("☕️☕️☕️☕️☕️", "☕️☕️☕️☕️☕️")
+        ])
+    wifi_rating = SelectField('WiFi Strength Rating', validators=[DataRequired()], choices=[
+            ("❌️", "❌️"),
+            ("💪", "💪"),
+            ("💪💪", "💪💪"),
+            ("💪💪💪", "💪💪💪"),
+            ("💪💪💪💪️", "💪💪💪💪"),
+            ("💪💪💪💪💪️️", "💪💪💪💪💪️"),
+    ])
+    socket_rating = SelectField(
+        "Power Socket Rating", validators=[DataRequired()],
+        choices=[
+            ("❌", "❌ No sockets"),  # none
+            ("🔌", "🔌"),  # 1 socket
+            ("🔌🔌", "🔌🔌"),
+            ("🔌🔌🔌", "🔌🔌🔌"),
+            ("🔌🔌🔌🔌", "🔌🔌🔌🔌"),
+            ("🔌🔌🔌🔌🔌", "🔌🔌🔌🔌🔌"),
+        ]
+    )
     submit = SubmitField('Submit')
+
+def format_time(t):
+    if t.minute == 0:
+        return t.strftime("%I%p").lstrip("0").lower()   # 8am
+    else:
+        return t.strftime("%I:%M%p").lstrip("0").lower()  # 8:30am
 
 # Exercise:
 # add: Location URL, open time, closing time, coffee rating, wifi rating, power outlet rating fields
@@ -42,15 +80,32 @@ def home():
     return render_template("index.html")
 
 
-@app.route('/add')
+@app.route('/add', methods=["GET", "POST"])
 def add_cafe():
     form = CafeForm()
     if form.validate_on_submit():
         print("True")
+        new_data = [[
+            form.cafe.data,
+            form.location_url.data,
+            format_time(form.open_time.data),
+            format_time(form.close_time.data),
+            form.coffee_rating.data,
+            form.wifi_rating.data,
+            form.socket_rating.data
+        ]]
+        new_row_df = pd.DataFrame(new_data, columns=['Cafe Name', 'Location', 'Open', 'Close', 'Coffee', 'Wifi', 'Power'])  # Adjust columns as needed
+
+        new_row_df.to_csv('cafe-data.csv', mode='a', header=False, index=False, lineterminator="\n")
+        return redirect(url_for('cafes'))
+
+    else:
+        print("Something off")
+        return render_template('add.html', form=form)
+
     # Exercise:
     # Make the form write a new row into cafe-data.csv
     # with   if form.validate_on_submit()
-    return render_template('add.html', form=form)
 
 
 @app.route('/cafes')
